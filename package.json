@@ -28,6 +28,7 @@
     "vite": "^2.8.4"
   },
   "dependencies": {
-    "daisyui": "^2.14.3"
+    "daisyui": "^2.14.3",
+    "page": "^1.11.6"
   }
 }
