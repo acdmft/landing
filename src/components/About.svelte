@@ -328,9 +328,9 @@
   </p>
 </article>
 
-<article class="prose mx-auto mt-4">
+<article class="prose mx-auto mt-6">
   <h1>Languages</h1>
-  <p><strong>English</strong> advanced</p>
-  <p><strong>French</strong> intermediate</p>
-  <p><strong>Russian</strong> native</p>
+  <p class="text-left"><strong>English</strong> advanced</p>
+  <p class="text-left"><strong>French</strong> intermediate</p>
+  <p class="text-left"><strong>Russian</strong> native</p>
 </article>
