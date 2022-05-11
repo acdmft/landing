@@ -21,10 +21,10 @@
 <h1 class="md:text-5xl text-xl font-semibold text-primary">Projects I've built</h1>
 <div class="w-5/6 mt-6 mx-auto flex flex-wrap jusify-around">
   <div class="flex flex-wrap">
-    <Card src={"/weather-app.png"} margins={'md:ml-4 mx-auto mt-4 flex-none shrink-0'} title={"Weather App"} text={weatherAppText} badges={weatherAppBadges} gitLink="https://github.com/acdmft/weather-app" deplLink="https://acdmft-weather-app.netlify.app/" />
-    <Card src={"/memory.png"} margins={'md:ml-auto mx-auto mt-4 flex-none srink-0'} title={"Memory Game"} text={memoryText}  badges={memoryBadges} gitLink="https://github.com/acdmft/memory-game" deplLink="https://acdmf-memo-game.netlify.app/" />
-    <Card src={"/meet.png"} margins={'md:ml-auto mx-auto mt-4 md:mr-4 flex-none srink-0'} title={"Green Meet"} text={greenText} badges={greenBadges} gitLink="https://github.com/Green-Meet" deplLink="#" />
-    <Card src={"/radio.png"} margins={'md:ml-4 mx-auto mt-4 flex-none'} title={"Apm Radio"} text={radioText} badges={radioBadges} gitLink="https://bitbucket.org/stgmft/apm_radio/src/master/" deplLink="https://apm-radio.herokuapp.com/" />
+    <Card src={"/weather-app.png"} margins={'md:ml-4 mx-auto mt-4 '} title={"Weather App"} text={weatherAppText} badges={weatherAppBadges} gitLink="https://github.com/acdmft/weather-app" deplLink="https://acdmft-weather-app.netlify.app/" />
+    <Card src={"/memory.png"} margins={'md:ml-auto mx-auto mt-4 '} title={"Memory Game"} text={memoryText}  badges={memoryBadges} gitLink="https://github.com/acdmft/memory-game" deplLink="https://acdmf-memo-game.netlify.app/" />
+    <Card src={"/meet.png"} margins={'md:ml-auto mx-auto mt-4 md:mr-4'} title={"Green Meet"} text={greenText} badges={greenBadges} gitLink="https://github.com/Green-Meet" deplLink="#" />
+    <Card src={"/radio.png"} margins={'md:ml-4 mx-auto mt-4 '} title={"Apm Radio"} text={radioText} badges={radioBadges} gitLink="https://bitbucket.org/stgmft/apm_radio/src/master/" deplLink="https://apm-radio.herokuapp.com/" />
   </div>
 
 </div>
