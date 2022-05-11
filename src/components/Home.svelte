@@ -1,5 +1,6 @@
 <script lang="ts">
-  import Typewriter from 'svelte-typewriter'
+  import Typewriter from 'svelte-typewriter';
+  import Sidebar from '../components/Sidebar.svelte';
   
   let src = '/avatar.png'
 
@@ -25,6 +26,8 @@
   <a type="button" href="/contact" class="btn btn-outline btn-accent">Contact me</a>
 </div>
 
+<!-- SIDEBAR -->
+<Sidebar />
 
 
 <!----------------      BACKGROUND IMAGE    ------------->

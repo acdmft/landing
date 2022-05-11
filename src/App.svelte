@@ -1,11 +1,12 @@
 <script lang="ts">
   import router from "page";
-  // components
+  // components and pages
   import Navbar from "./components/Navbar.svelte";
   import Home from "./components/Home.svelte";
   import About from "./components/About.svelte";
   import Contact from "./components/Contact.svelte";
   import Projects from "./components/Projects.svelte";
+
 
   let page;
   //routes

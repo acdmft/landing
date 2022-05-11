@@ -1,5 +1,6 @@
 <script lang="ts">
   import Card from './Card.svelte';
+  import Sidebar from './Sidebar.svelte';
   // Weather App 
   let weatherAppText = "SPA built with React and OpenWeather API. Shows the current weather of the selected city. Has favorites section where you can add the cities that are most interesting to you."; 
   let weatherAppBadges = ["React", "Tailwindcss"];
@@ -13,6 +14,9 @@
   let radioText = "Online radio site with live chat. After connecting to the site (login or signup) user can participate in discussions in the chat. Built with Ruby on Rails. Uses websockets with the help of Action Cable and Redis."
   let radioBadges = ["Ruby on Rails", "Node.js", "webpack", "redis"]
 </script>
+
+<!-- SIDEBAR  -->
+<Sidebar />
 
 <h1 class="md:text-5xl text-xl font-semibold text-primary">Projects I've built</h1>
 <div class="w-5/6 mt-6 mx-auto flex flex-wrap jusify-around">

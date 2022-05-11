@@ -1,3 +1,10 @@
+<script lang="ts">
+  import Sidebar from "./Sidebar.svelte";
+</script>
+
+<!-- SIDEBAR -->
+<Sidebar />
+
 <article class="prose mx-auto mt-4">
   <h1>About me</h1>
   <p class="text-left">
