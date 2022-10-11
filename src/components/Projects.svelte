@@ -24,7 +24,7 @@
     <Card src={"/weather-app.png"} margins={'md:ml-4 mx-auto mt-4 '} title={"Weather App"} text={weatherAppText} badges={weatherAppBadges} gitLink="https://github.com/acdmft/weather-app" deplLink="https://acdmft-weather-app.netlify.app/" />
     <Card src={"/memory.png"} margins={'md:ml-auto mx-auto mt-4 '} title={"Memory Game"} text={memoryText}  badges={memoryBadges} gitLink="https://github.com/acdmft/memory-game" deplLink="https://acdmf-memo-game.netlify.app/" />
     <Card src={"/meet.png"} margins={'md:ml-auto mx-auto mt-4 md:mr-4'} title={"Green Meet"} text={greenText} badges={greenBadges} gitLink="https://github.com/Green-Meet" deplLink="#" />
-    <Card src={"/Peertuber.png"} margins={'md:ml-4 mx-auto mt-4 '} title={"Apm Radio"} text={ptuberText} badges={ptuberBadges} gitLink="https://github.com/acdmft/peertuber-front" deplLink="https://peertuber.vercel.app" />
+    <Card src={"/Peertuber.png"} margins={'md:ml-4 mx-auto mt-4 '} title={"Peertuber"} text={ptuberText} badges={ptuberBadges} gitLink="https://github.com/acdmft/peertuber-front" deplLink="https://peertuber.vercel.app" />
   </div>
 
 </div>
