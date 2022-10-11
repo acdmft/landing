@@ -2,18 +2,18 @@
   import Typewriter from 'svelte-typewriter';
   import Sidebar from '../components/Sidebar.svelte';
   
-  let src = '/avatar.png'
+  let src = '/bussiness-man.png'
 
 </script>
 
 <div class="grid grid-col-2 content-around h-80 my-auto">
   <div class="avatar">
     <div class="w-20 md:w-24 rounded-full mx-auto ring ring-primary ring-offset-base-100 ring-offset-2">
-      <img {src} alt="avatar" />
+      <img {src} alt="avatar" class="min-h-[107%]" />
     </div>
   </div>
   <div>
-    <h1 class="relative z-10 md:text-5xl text-xl font-semibold text-primary">Andrei Zheksimbaev</h1>
+    <h1 class="relative z-10 md:text-5xl text-xl font-semibold text-primary">Andrei Zheksi</h1>
     <Typewriter interval={100} loop={2000} cursor=true>
       <h1 class="relative z-10 md:text-4xl text-lg mt-2 md:mt-4 text-secondary">Developer web full stack junior</h1>
     </Typewriter>
@@ -25,6 +25,7 @@
   <a type="button" href="/projects" class="btn hover:bg-success btn-info mr-4">Projects</a>
   <a type="button" href="/contact" class="btn btn-outline btn-accent">Contact me</a>
 </div>
+<p class="md:text-xl text-md font-semibold mt-8 text-slate-300">Check my lates project <a href="https://peertuber.vercel.app" target="_blank" class="text-blue-400 hover:text-blue-500">here</p>
 
 <!-- SIDEBAR -->
 <Sidebar />
