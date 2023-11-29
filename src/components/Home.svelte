@@ -25,7 +25,6 @@
   <a type="button" href="/projects" class="btn hover:bg-success btn-info mr-4">Projects</a>
   <a type="button" href="/contact" class="btn btn-outline btn-accent">Contact me</a>
 </div>
-<p class="md:text-xl text-md font-semibold mt-8 text-slate-300">Check my lates project <a href="https://peertuber.vercel.app" target="_blank" class="text-blue-400 hover:text-blue-500">here</p>
 
 <!-- SIDEBAR -->
 <Sidebar />
