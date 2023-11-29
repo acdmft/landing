@@ -11,23 +11,31 @@
   // card's badges
   export let badges;
   // project's links
-  export let gitLink;
+  export let gitLink = "";
   export let deplLink;
+  export let alt;
   onMount(()=>{
     console.log('Mounted successfully')
   })
 </script>
 
-<div class="card w-70 bg-slate-500 shadow-xl {margins}" transition:fade|local={{delay:250, duration: 3000}}>
-  <figure class="h-30"><img {src} alt="Weather app" /></figure>
+<div class="card max-w-[80em] bg-slate-500 shadow-xl {margins}" transition:fade|local={{delay:250, duration: 3000}}>
+  <figure class="h-30">
+    <a href={deplLink} target="_blank">
+
+      <img {src} {alt} />
+    </a>
+  </figure>
   <div class="card-body px-2 py-4 md:px-4 md:py-4">
     <h2 class="card-title text-base md:text-lg">{title}</h2>
     <p class="text-left text-sm md:text-base">{text}</p>
     <div class="card-actions justify-end">
+      {#if gitLink}
       <a href={gitLink} target="_blank" class="card-link leading-tight" 
         >View source</a
       >
       |
+      {/if}
       <a href={deplLink} target="_blank" class="card-link leading-tight">Live demo</a>
     </div>
     <div class="card-actions justify-end">

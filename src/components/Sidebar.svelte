@@ -1,5 +1,5 @@
 <div
-  class="fixed left-0 top-1/3 w-8 md:w-10 h-30 flex flex-col items-center py-2 border rounded-r-md border-slate-400"
+  class="hidden md:block fixed left-0 top-1/3 w-8 md:w-10 h-30 flex flex-col items-center py-2 border rounded-r-md border-slate-400"
 >
   <!-- GitHub LOGO -->
   <a href="https://github.com/acdmft" target="_blank">

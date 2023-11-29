@@ -5,12 +5,31 @@
   // Weather App
   let cardsInfo = [
     {
+      title: "Photo gallery",
+      text: "My personal Wordpress photo gallery.Made with Elementor and Visual Portfolio plugin. Deployed on DigitalOcean.",
+      badges: ["Wordpress", "Elementor", "Visual Portfolio", "DigitalOcean"],
+      src: "/gallery.png",
+      // gitLink: "https://github.com/Green-Meet", 
+      deplLink: "https://zhexigallery.art",
+      alt: "wordpress photo gallery"
+    },
+    {
+      title: "Sport coach landing",
+      text: "Wordpress one page site for a sport coach. Made with Elementor. Deployed on OVHcloud.",
+      badges: ["Wordpress", "Elementor", "OVH"],
+      src: "/coach.png",
+      // gitLink: "https://github.com/Green-Meet", 
+      deplLink: "https://coach.zhexigallery.art",
+      alt: "wordpress sport coach"
+    },
+    {
       title: "Weather App",
       text: "SPA built with React and OpenWeather API. Shows the current weather of the selected city. Has favorites section where you can add the cities that are most interesting to you.",
       badges: ["React", "Tailwindcss"],
-      src: "/weather-app.png",
+      src: "/weather.png",
       gitLink: "https://github.com/acdmft/weather-app", 
-      deplLink: "https://acdmft-weather-app.netlify.app/"
+      deplLink: "https://acdmft-weather-app.netlify.app/",
+      alt: "weather app"
     },
     {
       title: "Memory Game",
@@ -18,15 +37,8 @@
       badges: ["React", "Bootstrap"],
       src: "/memory.png",
       gitLink: "https://github.com/acdmft/memory-game", 
-      deplLink: "https://acdmf-memo-game.netlify.app/"
-    },
-    {
-      title: "Green Meet",
-      text: "Functional React application. Where user can create events and join events. Uses Express and Postgresql in the backand. Work in team of developers inspired by Agile method",
-      badges: ["React", "Express", "Postgresql", "Tailwindcss"],
-      src: "/meet.png",
-      gitLink: "https://github.com/Green-Meet", 
-      deplLink: "#"
+      deplLink: "https://acdmf-memo-game.netlify.app/",
+      alt: "memory game board"
     },
     {
       title: "Peertuber",
@@ -34,7 +46,8 @@
       badges: ["Svelte", "Node.js", "Express.js", "Mongodb"],
       src: "/Peertuber.png",
       gitLink: "https://github.com/acdmft/peertuber-front", 
-      deplLink: "https://peertuber.vercel.app"
+      deplLink: "https://peertuber.vercel.app",
+      alt: "peertuber home page"
     },
   ];
 
@@ -43,13 +56,6 @@
   onMount(()=>{
     cards = [...cards, cardsInfo.pop()]
   })
-
-  function toggleCard(n) {
-    // console.log(cards.indexOf(cardsInfo[n-1]));
-    if (cards.indexOf(cardsInfo[n-1]) == -1) {
-      cards = [...cards, cardsInfo[n-1]]
-	  }
-  }
 
   function handleScroll() {
     const scrolledToBottom = (window.innerHeight + window.scrollY) >= (document.body.offsetHeight - 10);
@@ -67,11 +73,11 @@
 <Sidebar />
 
 <h3 class="md:text-3xl text-md font-semibold text-primary">My projects:</h3>
-<div class="w-5/6 mt-6 mx-auto flex flex-wrap jusify-around">
+<div class="w-full md:w-5/6 mt-6 mx-auto flex flex-wrap justify-around">
   
   <div class="flex flex-wrap">
     {#each cards as card}
-    <div class="card-wrapper mt-20">
+    <div class="card-wrapper mt-20 mx-auto">
       <svelte:component this={Card}
         src={card.src}
         margins={"md:ml-4 mx-auto mt-4 "}
@@ -80,6 +86,7 @@
         badges={card.badges}
         gitLink={card.gitLink}
         deplLink={card.deplLink}
+        alt={card.alt}
       />
     </div>
     {/each}
