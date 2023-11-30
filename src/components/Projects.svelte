@@ -57,6 +57,13 @@
   // console.log('document.body', document.body);
   document.addEventListener('touchmove', ()=>{
     z = document.body.offsetHeight;
+    const scrolledToBottom = (window.innerHeight + window.scrollY) >= (document.body.offsetHeight - 10);
+    if (scrolledToBottom && cardsInfo.length !== 0) {
+      const previousScrollY = window.scrollY;
+      window.scroll(0, previousScrollY);
+      // let card = cardsInfo.pop();
+      cards = [...cards, cardsInfo.pop()];
+    }
   })
 
   onMount(()=>{
