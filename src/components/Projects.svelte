@@ -53,6 +53,11 @@
 
   let cards = [];
   let y;
+  let z;
+  // console.log('document.body', document.body);
+  document.addEventListener('touchmove', ()=>{
+    z = document.body.offsetHeight;
+  })
 
   onMount(()=>{
     cards = [...cards, cardsInfo.pop()]
@@ -74,7 +79,7 @@
 <Sidebar />
 
 <h3 class="md:text-3xl text-lg font-semibold text-primary">My projects:</h3>
-<p class="fixed top-0">ScrollY: {y}</p>
+<p class="fixed top-0">ScrollY: {y} z: {z}</p>
 <div class="w-full md:w-5/6 mx-auto flex flex-wrap justify-around">
   
   <div class="flex flex-wrap">
