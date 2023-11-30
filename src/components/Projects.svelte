@@ -72,12 +72,12 @@
 <!-- SIDEBAR  -->
 <Sidebar />
 
-<h3 class="md:text-3xl text-md font-semibold text-primary">My projects:</h3>
+<h3 class="md:text-3xl text-lg font-semibold text-primary">My projects:</h3>
 <div class="w-full md:w-5/6 mt-6 mx-auto flex flex-wrap justify-around">
   
   <div class="flex flex-wrap">
     {#each cards as card}
-    <div class="card-wrapper mt-20 mx-auto">
+    <div class="card-wrapper md:mt-20 mt-8 mx-auto">
       <svelte:component this={Card}
         src={card.src}
         margins={"md:ml-4 mx-auto mt-4 "}
