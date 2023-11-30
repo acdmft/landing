@@ -52,7 +52,8 @@
   ];
 
   let cards = [];
-  
+  let y;
+
   onMount(()=>{
     cards = [...cards, cardsInfo.pop()]
   })
@@ -68,16 +69,17 @@
   }
 </script>
 
-<svelte:window on:scroll={handleScroll} />
+<svelte:window on:scroll={handleScroll} bind:scrollY={y}/>
 <!-- SIDEBAR  -->
 <Sidebar />
 
 <h3 class="md:text-3xl text-lg font-semibold text-primary">My projects:</h3>
-<div class="w-full md:w-5/6 mt-6 mx-auto flex flex-wrap justify-around">
+<p class="fixed top-0">ScrollY: {y}</p>
+<div class="w-full md:w-5/6 mx-auto flex flex-wrap justify-around">
   
   <div class="flex flex-wrap">
     {#each cards as card}
-    <div class="card-wrapper md:mt-20 mt-8 mx-auto">
+    <div class="card-wrapper md:mt-20 mt-2 mx-auto">
       <svelte:component this={Card}
         src={card.src}
         margins={"md:ml-4 mx-auto mt-4 "}
