@@ -52,11 +52,8 @@
   ];
 
   let cards = [];
-  let y;
-  let z;
-  // console.log('document.body', document.body);
+
   document.addEventListener('touchmove', ()=>{
-    z = document.body.offsetHeight;
     const scrolledToBottom = (window.innerHeight + window.scrollY) >= (document.body.offsetHeight - 10);
     if (scrolledToBottom && cardsInfo.length !== 0) {
       const previousScrollY = window.scrollY;
@@ -81,12 +78,11 @@
   }
 </script>
 
-<svelte:window on:scroll={handleScroll} bind:scrollY={y}/>
+<svelte:window on:scroll={handleScroll} />
 <!-- SIDEBAR  -->
 <Sidebar />
 
 <h3 class="md:text-3xl text-lg font-semibold text-primary">My projects:</h3>
-<p class="fixed top-0">ScrollY: {y} z: {z}</p>
 <div class="w-full md:w-5/6 mx-auto flex flex-wrap justify-around">
   
   <div class="flex flex-wrap">
