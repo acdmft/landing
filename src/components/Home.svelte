@@ -15,7 +15,7 @@
   <div>
     <h1 class="relative z-10 md:text-5xl text-xl font-semibold text-primary">Andrei Zheksi</h1>
     <Typewriter interval={100} loop={2000} cursor=true>
-      <h1 class="relative z-10 md:text-4xl text-lg mt-2 md:mt-4 text-secondary">Developer web full stack junior</h1>
+      <h1 class="relative z-10 md:text-4xl text-lg mt-2 md:mt-4 text-secondary">Developer web full stack</h1>
     </Typewriter>
   </div>
 </div>

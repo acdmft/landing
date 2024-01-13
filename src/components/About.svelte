@@ -9,9 +9,9 @@
   <h1>About me</h1>
   <h2>Hi, I'm Andrei</h2>
   <p class="text-left">
-    A full-stack web developer with a 1 year experience. I am passionate about
-    OpenSource projects. I believe that ideas and a well-organised team matter
-    more than technical competences.
+    A full-stack web developer with 5 years experience. I am passionate about
+    OpenSource projects. I believe that in 2024 ideas and well-organised team matter
+    more than participants technical competences.
   </p>
 </article>
 
