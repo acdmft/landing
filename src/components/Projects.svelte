@@ -2,6 +2,8 @@
     import { onMount } from "svelte";
   import Card from "./Card.svelte";
   import Sidebar from "./Sidebar.svelte";
+  import Portfolio from "./Portfolio.svelte";
+
   // Weather App
   let cardsInfo = [
     {
@@ -84,7 +86,7 @@
 
 <h3 class="md:text-3xl text-lg font-semibold text-primary">My projects:</h3>
 <div class="w-full md:w-5/6 mx-auto flex flex-wrap justify-around">
-  
+  <Portfolio />
   <div class="flex flex-wrap">
     {#each cards as card}
     <div class="card-wrapper md:mt-20 mt-2 mx-auto">
