@@ -9,6 +9,14 @@ module.exports = {
       fontSize: {
         '10xl': '10rem'
       },
+      // keyframes: {
+      //   slideInFromLeft: {
+      //     '0%, 100%': { transform: 'translateX' }
+      //   } 
+      // },
+      // animation: {
+      //   slideInFromLeft: 'slide-in-from-left'
+      // }
     },
   },
   plugins: [require("@tailwindcss/typography"), require("daisyui")],
