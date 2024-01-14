@@ -8,6 +8,7 @@
   <p class="text-left"><strong>Linkedin:  </strong> <a href="https://www.linkedin.com/in/andrei-zheksim/"> andrei-zheksim</a></p>
   <p class="text-left"><strong>GitHub:  </strong> <a href="https://github.com/acdmft"> acdmft</a></p>
   <p class="text-left"><strong>Email:  </strong>  andrewsanser@gmail.com</p>
+  <p class="text-left"><strong>Telephone: </strong>+74 914 9444</p>
   </article>
 
 </div>

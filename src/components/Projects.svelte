@@ -8,7 +8,7 @@
   let cardsInfo = [
     {
       title: "Photo gallery",
-      text: "My personal Wordpress photo gallery.Made with Elementor and Visual Portfolio plugin. Deployed on DigitalOcean.",
+      text: "My personal Wordpress photo gallery. Made with Elementor and Visual Portfolio plugin. Deployed on DigitalOcean using WP docker image.",
       badges: ["Wordpress", "Elementor", "Visual Portfolio", "DigitalOcean"],
       src: "/gallery.png",
       // gitLink: "https://github.com/Green-Meet", 
@@ -89,7 +89,7 @@
   <Portfolio />
   <div class="flex flex-wrap">
     {#each cards as card}
-    <div class="card-wrapper md:mt-20 mt-2 mx-auto">
+    <div class="card-wrapper md:mt-20 mt-2 mx-auto" >
       <svelte:component this={Card}
         src={card.src}
         margins={"md:ml-4 mx-auto mt-4 "}

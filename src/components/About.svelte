@@ -11,7 +11,7 @@
   <p class="text-left">
     A full-stack web developer with 5 years experience. I am passionate about
     OpenSource projects. I believe that in 2024 ideas and well-organised team matter
-    more than participants technical competences.
+    more than technical competences.
   </p>
 </article>
 
